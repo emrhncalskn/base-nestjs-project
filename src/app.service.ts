@@ -7,7 +7,7 @@ export class AppService {
     return 'Hello World!';
   }
 
-  async randomDigits(res: Response) {
-    return await res.send(Math.floor(100000 + Math.random() * 900000));
+  randomDigits(res: Response) {
+    return res.send(Math.floor(100000 + Math.random() * 900000));
   }
 }
