@@ -11,7 +11,7 @@ export class AppController {
     return this.appService.getHello();
   }
 
-  @Get('randomdigits')
+  @Get('test')
   async randomDigits(@Res() res: Response) {
     return await this.appService.randomDigits(res);
   }
