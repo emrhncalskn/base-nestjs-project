@@ -8,6 +8,7 @@ export class AppService {
   }
 
   randomDigits(res: Response) {
-    return res.status(200).send(Math.floor(100000 + Math.random() * 900000));
+    const digits = Math.floor(100000 + Math.random() * 900000)
+    return res.status(200).send({ digits });
   }
 }

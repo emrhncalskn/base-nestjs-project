@@ -18,7 +18,7 @@
     "test:cov": "jest --coverage",
     "test:debug": "node --inspect-brk -r tsconfig-paths/register -r ts-node/register node_modules/.bin/jest --runInBand",
     "test:e2e": "jest --config ./test/jest-e2e.json",
-    "portkill": "kill-port --port 3333",
+    "portkill": "kill-port --port 6000",
     "portkillstart": "npm run portkill && npm run start",
     "typeorm": "ts-node ./node_modules/typeorm/cli",
     "gen-mig": "npm run typeorm -- -d ./typeorm.config.ts migration:generate",

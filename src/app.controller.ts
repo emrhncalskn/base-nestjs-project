@@ -16,7 +16,7 @@ export class AppController {
 
   @PassAuth()
   @Get('test')
-  async randomDigits(@Res() res: Response) {
-    return await this.appService.randomDigits(res);
+  randomDigits(@Res() res: Response) {
+    return this.appService.randomDigits(res);
   }
 }
